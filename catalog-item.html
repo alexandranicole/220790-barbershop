@@ -3,7 +3,9 @@
  <head>
    <meta charset="utf-8">
    <title>Barbershop-catalog</title>
+   <link href="css/normalize.css" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic">
   </head>
  <body>
    <header class="main-header">
@@ -21,7 +23,7 @@
                <a href="#">Прайс-лист</a>
              </li>
              <li>
-               <a href="#">Магазин</a>
+               <a class="active" href="#">Магазин</a>
              </li> 
              <li>
                <a href="#">Контакты</a>
@@ -46,15 +48,13 @@
         <div class="pic-desc clearfix">
         <div class="item-pics">
         <div class="picture-big">
-        <img src="img/temp/item-big.jpg" width="460" height="499" alt="pic">
+        <img src="img/temp/item-big.jpg" width="480" height="520" alt="pic">
       </div>
-      <div class="picture-small">
         <ul class="picture-small">
-          <li><a href="#"><img src="img/temp/item-small1.jpg" width="140" height="150" alt="pic"></a> </li>
-          <li><a href="#"><img src="img/temp/item-small2.jpg" width="140" height="150" alt="pic"></a> </li>
-          <li><a href="#"><img src="img/temp/item-small3.jpg" width="140" height="150" alt="pic"></a> </li>
+          <li><a href="#"><img src="img/temp/item-small1.jpg" width="160" height="170" alt="pic"></a> </li>
+          <li><a href="#"><img src="img/temp/item-small2.jpg" width="160" height="170" alt="pic"></a> </li>
+          <li><a href="#"><img src="img/temp/item-small3.jpg" width="160" height="170" alt="pic"></a> </li>
           </ul>
-          </div>
       </div>
     <div class="product-descript">
     <div class="item-code clearfix">
@@ -68,14 +68,16 @@
        <div class="price">2900руб.</div>
        <a href="#" class="btn">Купить</a>
      </div>
-    <h2>В набор входят</h2>
+    <div class="item-cont">
+    <h2>В набор входят:</h2>
     <ul class="item-content">
         <li>Средство для умывания(50мл)</li>
         <li>Увлажняющий крем(50мл)</li>
         <li>Кремя для бритья(50мл)</li>
         <li>Крем после бритья, шампунь(50мл)</li>
         <li>Удобная кожаная косметичка</li>
-     </ul>  
+     </ul>
+    </div>
   </div>
   </div>
   </main>

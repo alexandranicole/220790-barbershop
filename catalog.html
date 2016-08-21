@@ -3,7 +3,9 @@
  <head>
    <meta charset="utf-8">
    <title>Barbershop-catalog</title>
+   <link href="css/normalize.css" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic">
   </head>
  <body>
    <header class="main-header">
@@ -21,7 +23,7 @@
                <a href="#">Прайс-лист</a>
              </li>
              <li>
-               <a href="#">Магазин</a>
+               <a class="active" href="catalog.html">Магазин</a>
              </li> 
              <li>
                <a href="#">Контакты</a>
@@ -46,53 +48,53 @@
    <aside class="sidebar">
      <form class="filter" action="btn" method="post">
      <h2>Производители</h2>
-      <ul class="filter_list">
-           <li class="filter_item">
+      <ul class="filter-list">
+           <li class="filter-item">
                <label>
                  <input type="checkbox" name="Baxter of California" checked>Baxter of California
                </label>
            </li>
-           <li class="filter_item">
+           <li class="filter-item">
              <label>
                <input type="checkbox" name="Mr Natty">Mr Natty
              </label>
            </li >
-           <li class="filter_item">
+           <li class="filter-item">
              <label>
                <input type="checkbox" name="Suavecito">Suavecito
              </label>
            </li>
-           <li class="filter_item">
+           <li class="filter-item">
              <label>
                <input type="checkbox" name="Malin+Goetz">Malin+Goetz
              </label>
            </li>
-           <li class="filter_item">
+           <li class="filter-item">
              <label>
                <input type="checkbox" name="Murray's">Murray's
              </label>
            </li>
-           <li class="filter_item">
+           <li class="filter-item">
              <label>
                <input type="checkbox" name="American Crew">American Crew
              </label>
            </li>
          </ul>
      <h2>Группы товаров</h2>
-           <ul class="filter_list">        
-             <li  class="filter_item">
+           <ul class="filter-list">        
+             <li  class="filter-item">
                <label>
-                 <input type="radio" name="change_one">Бритвенные принадлежности
+                 <input type="radio" name="change-one">Бритвенные принадлежности
                </label>
              </li>
-             <li  class="filter_item">
+             <li  class="filter-item">
              <label>
-               <input type="radio" name="change_one" checked>Средства для ухода
+               <input type="radio" name="change-one" checked>Средства для ухода
              </label>
              </li>
-             <li  class="filter_item">
+             <li  class="filter-item">
                <label>
-                 <input type="radio" name="change_one">Аксессуары
+                 <input type="radio" name="change-one">Аксессуары
                </label>
              </li>
            </ul>
@@ -102,68 +104,82 @@
    <div class="catalog">
    <div class="catalog-pagination">
    <div class="catalog-item">
-     <a href="#"><img src="img/temp/item1.jpg" width="220" height="166" alt="pic"></a>
+     <a href="#"><img src="img/temp/item1.jpg" width="240" height="200" alt="pic"></a>
+       <div class="name-price clearfix">
      <a href="#">Набор для путешествий
        <div class= "item">«Baxter Of California»</div>
      </a>
-     <div class="buy">
+     <div class="buy-1">
        <div class="price">2900руб.</div>
        <a href="#" class="btn">Купить</a>
      </div>
    </div>
+   </div>
    <div class="catalog-item">
-     <a href=""><img src="img/temp/item2.jpg" width="220" height="166" alt="pic"></a>
+     <a href=""><img src="img/temp/item2.jpg" width="240" height="200" alt="pic"></a>
+     <div class="name-price clearfix">
      <a href="#">Увлажняющий кондиционер
        <div class= "item">«Baxter Of California»</div>
      </a>
-     <div class="buy">
-       <div class="price">7500руб.</div>
+     <div class="buy-1">
+       <div class="price">750руб.</div>
        <a href="#" class="btn">Купить</a>
      </div>
+    </div>
    </div>
    <div class="catalog-item">
-     <a href=""><img src="img/temp/item3.jpg" width="220" height="166" alt="pic"></a>
+     <a href=""><img src="img/temp/item3.jpg" width="240" height="200" alt="pic"></a>
+     <div class="name-price clearfix">
      <a href="#">Гель для волос
        <div class= "item">«Cuavecito»</div>
      </a>
-     <div class="buy">
+     <div class="buy-1">
        <div class="price">290руб.</div>
        <a href="#" class="btn">Купить</a>
      </div>
+    </div>
    </div>
    <div class="catalog-item">
-   <a href=""><img src="img/temp/item4.jpg" width="220" height="166" alt="pic"></a>
+   <a href=""><img src="img/temp/item4.jpg" width="240" height="200" alt="pic"></a>
+   <div class="name-price clearfix">
    <a href="#">Глина для укладки волос
      <div class= "item">«American Crew»</div>
    </a>
-   <div class="buy">
+   <div class="buy-1">
      <div class="price">500руб.</div>
      <a href="#" class="btn">Купить</a>
-   </div>
+   </div> 
+  </div>
  </div>
  <div class="catalog-item">
-   <a href=""><img src="img/temp/item5.jpg" width="220" height="166" alt="pic"></a>
+   <a href=""><img src="img/temp/item5.jpg" width="240" height="200" alt="pic"></a>
+    <div class="name-price clearfix">
    <a href="#">Гель для волос
      <div class= "item">«American Crew»</div>
    </a>
-   <div class="buy">
+   <div class="buy-1">
      <div class="price">300руб.</div>
        <a href="#" class="btn">Купить</a>
      </div>
    </div>
+ </div>
    <div class="catalog-item">
-     <a href=""><img src="img/temp/item6.jpg" width="220" height="166" alt="pic"></a>
+     <a href=""><img src="img/temp/item6.jpg" width="240" height="200" alt="pic"></a>
+       <div class="name-price clearfix">
        <a href="#">Набор для бритья
          <div class= "item">«Baxter Of California»</div>
        </a>
-       <div class="buy">
+       <div class="buy-1">
          <div class="price">3900руб.</div>
          <a href="#" class="btn">Купить</a>
-       </div></div></div>
+           </div>
+       </div>
+       </div>
+       </div>
      <div class="pagination">
        <ul class="pagination-list">
          <li class="pagination-item"><a href="#">1</a></li>
-         <li class="pagination-item_active"><a href="#">2</a></li>
+         <li class="pagination-item active"><a href="#">2</a></li>
          <li class="pagination-item"><a href="#">3</a></li>
          <li class="pagination-item"><a href="#">4</a></li>
        </ul>
