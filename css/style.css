@@ -187,6 +187,7 @@ max-width: 140px;
 }
 
 .btn {
+  height: 43px;
   display: inline-block;
   padding: 10px 33px;
   font-weight: 700;
@@ -429,6 +430,18 @@ max-width: 140px;
 
 .breadcrumbs .active {
   color: #aba9a7;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs .current {
+  color: #aba9a7;
+}
+
+.breadcrumbs .current::after {
+  display: none;
 }
 
 /*-----------------ITEM GALLERY----------------------*/
@@ -675,24 +688,27 @@ background: url("../img/sprite/circle.jpg") no-repeat center;
   margin-right: 20px;
   margin-bottom: 30px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-
 }
 
+.pic-catalog{
+    display: block;
+    height: 163px;
+    width: 220px;
+}
 .catalog-item:nth-child(3n) {
   margin-right: 0;
 }
 
 .name-price{
  background: white;
- height: 123px;
+ height: 121px;
  padding: 14px 17px 16px 16px;
 }
 
 .buy-1{
- width: 187px;
- height: 43px;
+ 
  font-size: 0;
- margin-top: 10px;
+ 
 }
 
 .item{
@@ -700,6 +716,8 @@ background: url("../img/sprite/circle.jpg") no-repeat center;
 }
 
 .prod{
+  height: 48px;
+  display: block;
   font-size: 14px;
   line-height: 18px;
   color: black;
@@ -754,7 +772,7 @@ vertical-align: middle;
   background-color: #663d15;
 }
 
-/*FOOTER*/
+/*------FOOTER-------------*/
 
 .main-footer {
   padding-top: 56px;
@@ -850,3 +868,137 @@ vertical-align: middle;
   color: #000000;
   background-color: #ffffff;
 }
+
+
+/*-----------------PRICE---------------*/
+
+.inner-content {
+  margin-bottom: 75px;
+}
+
+.inner-content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.inner-content p {
+  margin: 14px 0;
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.inner-content td {
+  padding: 10px 15px;
+
+  border: 2px solid #000000;
+}
+
+.big-heading {
+  margin-top: 55px;
+  margin-bottom: 65px;
+
+  text-align: center;
+}
+
+.big-heading h2 {
+  position: relative;
+  z-index: 2;
+  
+  display: inline-block;
+  margin: 0;
+  padding: 0 25px;
+
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  
+  background: #f8f3f0 url("../img/pattern-white.jpg") repeat;
+}
+
+.big-heading::after {
+  content: "";
+  position: relative;
+  top: -25px;
+  z-index: 1;
+  display: block;
+  border-bottom: 2px solid #000000;
+}
+
+.custom-list-1 {
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.custom-list-1 li {
+  position: relative;
+
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.prices-table {
+  width: 100%;
+}
+
+.prices-table td {
+  width: 50%;
+}
+
+.prices-table td:last-child {
+  text-align: center;
+}
+
+.short-text {
+  padding-right: 80px;
+}
+
+.inner-columns {
+  margin: 60px 0;
+}
+
+.inner-column-left,
+.inner-column-right {
+  width: 460px;
+}
+
+.inner-column-left {
+  float: left;
+}
+
+.inner-column-right {
+  float: right;
+}
+
+.inner-column-left *:first-child,
+.inner-column-right *:first-child {
+  margin-top: 0;
+}
+
+.inner-column-left *:last-child,
+.inner-column-right *:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+
