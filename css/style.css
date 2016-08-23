@@ -670,11 +670,10 @@ background: url("../img/sprite/circle.jpg") no-repeat center;
 .catalog-item {
   display: inline-block;
   vertical-align: top;
-  width: 218px;
+  width: 220px;
   height: 286px;
   margin-right: 20px;
   margin-bottom: 30px;
-  border: 1px solid #E5E4E2;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 
 }
