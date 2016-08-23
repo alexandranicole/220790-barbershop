@@ -66,7 +66,7 @@ body {
 }
 
 .inner-page{
-   background: url("../img/inner-bg.jpg") no-repeat center top;
+   background: url("../img/inner-bg.jpg");
    color: #000000; 
 }
 
@@ -381,7 +381,7 @@ max-width: 140px;
   width: 100%;
 }
 
-/*MAIN ITEM*/
+/*----------------MAIN ITEM-------------------*/
 
 .title h1 {
  margin-bottom: 10px;
@@ -431,7 +431,7 @@ max-width: 140px;
   color: #aba9a7;
 }
 
-/*ITEM GALLERY*/
+/*-----------------ITEM GALLERY----------------------*/
 
 .item-pics {
 float: left;
@@ -593,7 +593,7 @@ input[type="checkbox"] + label::before{
 }
 
 input[type="checkbox"]:checked + label::before{
-content: "";
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -630,14 +630,21 @@ input[type="checkbox"] + label:active {
   display: block;
   width: 16px;
   height: 16px;
+  background-color: #f9f6f3;
   position: absolute;
   top: 0;
   left: 0;
   border: 2px solid #000;
   border-radius: 50%;
 }
-.filter-item input[type="radio"]:checked + label::before {
-  background: url("../img/sprite/circle.jpg") no-repeat center;
+.filter-item input[type="radio"]:checked + label::after {
+width: 16px;
+height: 16px;
+position: absolute;
+top: 0;
+left: 0;
+content: "";
+background: url("../img/sprite/circle.jpg") no-repeat center;
 }
 .filter-groups input[type="radio"] + label:last-child {
   padding-bottom: 50px;
@@ -651,7 +658,7 @@ input[type="checkbox"] + label:active {
   opacity: 0.4;
 }
 
-/* MAIN CATALOG */
+/*--------------------- MAIN CATALOG----------------- */
 .catalog {
    float: right;
    width: 720px;
@@ -663,7 +670,6 @@ input[type="checkbox"] + label:active {
 .catalog-item {
   display: inline-block;
   vertical-align: top;
-  font-size: 14px;
   width: 218px;
   height: 286px;
   margin-right: 20px;
@@ -680,41 +686,31 @@ input[type="checkbox"] + label:active {
 .name-price{
  background: white;
  height: 123px;
- margin: 0;
+ padding: 14px 17px 16px 16px;
 }
-
-.name-price a{
-    color: black;
-    text-decoration: none;
-    text-transform:none; 
-}
-
 
 .buy-1{
  width: 187px;
  height: 43px;
- margin: 13px 17px 16px 16px;
  font-size: 0;
-}
-
-.item-01{
- margin-left: 15px;
- margin-bottom: 5px;
+ margin-top: 10px;
 }
 
 .item{
- margin-left: 15px;
  text-transform: uppercase;
 }
 
+.prod{
+  font-size: 14px;
+  line-height: 18px;
+  color: black;
+  text-decoration: none;
+  text-transform: none;  
+}
 
 .buy-1 .btn {
-  display: inline-block;
-  height: 43px;
   width: 78px;
   padding: 9px 18px;
-  background: #000000;
-  color: #ffffff;  
 }
 
 .buy-1 .btn:hover {
@@ -765,7 +761,7 @@ vertical-align: middle;
   padding-top: 56px;
   padding-bottom: 38px;
   color: #ffffff; 
-  background: #252525 url("../img/footer-bg.jpg")no-repeat center top;
+  background: #252525 url("../img/footer-bg.jpg");
   box-shadow: inset 0 20px 20px 0 #131313;
 }
 
