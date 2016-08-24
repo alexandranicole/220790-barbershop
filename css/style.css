@@ -80,7 +80,7 @@ h1 {
 }
 
 h2 .filter-form legend{
-  font-size: 30px;
+  font-size: 24px;
   line-height: 30px;
   }
 
@@ -123,17 +123,19 @@ float: left;
 width: 640px;
 }
 
+
 .main-navigation ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 0;
 }
 
 .main-navigation li {
   display: inline-block;
-  vertical-align: top;
   font-size: 16px;
   line-height: 20px;
+  vertical-align: top;
 }
 
 .main-navigation a {
@@ -141,7 +143,6 @@ width: 640px;
   padding: 25px 20px;
   color: #ffffff;
   text-decoration: none;
-  border-bottom: 4px solid transparent; 
 }
 
 .main-navigation a:hover {
@@ -149,8 +150,24 @@ width: 640px;
 }
 
 .main-navigation .active {
-  border-bottom: 4px solid white;
+  position: relative;
+  background-color: none;
 }
+
+.main-navigation .active a:hover {
+  background: none;
+}
+
+.main-navigation .active::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 5px;
+  background-color: #ffffff;
+}
+
 .user-block{
 float: right;
 max-width: 140px;
@@ -196,7 +213,6 @@ max-width: 140px;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
   vertical-align: top;
   text-align: center;
   color: #ffffff;
@@ -235,7 +251,6 @@ max-width: 140px;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
   vertical-align: top;
   text-align: center;
   color: #ffffff;
@@ -403,7 +418,6 @@ max-width: 140px;
   padding: 7px 15px;
   font-size: 14px;
   line-height: 24px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
   background-color: #f9f6f3;
@@ -435,7 +449,7 @@ max-width: 140px;
 .breadcrumbs {
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 }
 
 .breadcrumbs li {
@@ -560,6 +574,7 @@ color: #aeaeae;
 
 .price {
   display: inline-block;
+  text-align: center;
   font-size: 14px;
   line-height: 24px;
   height: 43px;
@@ -626,8 +641,13 @@ margin-top: 55px;
    list-style: none;
 }
 
+.filter-item{
+   margin-bottom: 17px; 
+}
+
 form h2{
     margin-bottom: 29px;
+     margin-top: 0;
 }
 
 .filter-list{
@@ -639,7 +659,6 @@ input[type="checkbox"]{
 }
 
 input[type="checkbox"] + label{
-    margin-bottom: 17px;
     display: inline-block;
     vertical-align: top;
     padding-left: 45px;
@@ -656,14 +675,7 @@ input[type="checkbox"] + label::before{
     background-color: #f9f6f3;
     position: absolute;
     left: 0;
-}
-
-input[type="checkbox"]:checked + label::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    background: url("../img/sprite/spritesheet.png") no-repeat center;
-    background-position: -18px -74px;
+    top: 2px;
 }
 
 input[type="checkbox"] + label:hover {
@@ -674,7 +686,7 @@ input[type="checkbox"]:checked + label::before,
 input[type="checkbox"]:disabled + label::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     background: url("../img/sprite/spritesheet.png") no-repeat center;
     background-position: -18px -74px;
@@ -686,34 +698,35 @@ input[type="checkbox"]:disabled + label {
 input[type="radio"] {
   display: none;
 }
+
 input[type="radio"] + label {
-  display: block;
+  display: inline-block;
+   vertical-align: top;
   position: relative;
-  padding-left: 30px;
-  padding-bottom: 20px;
+  padding-left: 45px;
   line-height: 20px;
   font-size: 15px;
-  font-family: "PT Sans Narrow";
   text-transform: uppercase;
   cursor: pointer;
 }
+
 input[type="radio"] + label::before {
   content: "";
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   background-color: #f9f6f3;
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   border: 2px solid #000;
   border-radius: 50%;
 }
 input[type="radio"]:checked + label::after {
-width: 16px;
-height: 16px;
+width: 20px;
+height: 20px;
 position: absolute;
-top: 0;
+top: 2px;
 left: 0;
 content: "";
 background: url("../img/sprite/circle.jpg") no-repeat center;
@@ -726,7 +739,7 @@ input[type="radio"]:checked + label::before,
 input[type="radio"]:disabled + label::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     background: url("../img/sprite/circle.jpg") no-repeat center;
 }
@@ -737,10 +750,11 @@ input[type="radio"]:disabled + label {
 /*--------------------- MAIN CATALOG----------------- */
 .catalog {
    float: right;
-   width: 720px;
+   width: 700px;
 }
 
 .catalog-pagination {
+ font-size: 0;
 }
 
 .catalog-item {
@@ -856,7 +870,7 @@ vertical-align: middle;
 }
 
 .pagination-item .current:hover {
-  display: none;
+   background-color: white;
 }
 
 
@@ -1156,7 +1170,6 @@ vertical-align: middle;
   padding-right: 40px;
   font-size: 14px;
   line-height: 24px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
   background-color: #f9f6f3;
